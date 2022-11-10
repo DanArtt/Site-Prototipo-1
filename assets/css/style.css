@@ -1,0 +1,110 @@
+.background-index{
+    background-image: linear-gradient(40deg, rgb(0, 0, 0), rgb(0, 17, 255));
+    background-repeat:no-repeat;
+    background-size: cover;
+    margin: 75px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.background-contato{
+    background-image: linear-gradient(-40deg, rgb(0, 0, 0), rgb(0, 17, 255));
+    background-repeat:no-repeat;
+    background-size: cover;
+    margin: 141px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+}
+
+.menu li a, h1, p {
+    color: white;
+}
+
+.img-tm {
+    width: auto;
+    height: 200px;
+    padding: 10px;
+}
+
+#titulo {
+    text-decoration: underline;
+}
+
+.menu li {
+    display: inline;
+    padding: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu a:hover {
+    color: gray;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.p-30 {
+    padding: 30px;
+    color: white;
+}
+
+.p-20 {
+    padding: 20px;
+    color: white;
+}
+
+.p-10 {
+    padding: 10px;
+    color: white;
+}
+
+.p-mw {
+    max-width: 600px;
+}
+
+.tm-icon {
+    height: 50px;
+    width: auto;
+}
+
+.form-flex {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.tm-btn {
+    width: fit-content;
+    height: fit-content;
+}
+
+.empresa {
+    text-align: center;
+}
+
+.cabecalho {
+    background-color: black;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.logo-entrelados {
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+.contato {
+    text-align: center;
+    padding-top: 10px;
+}
