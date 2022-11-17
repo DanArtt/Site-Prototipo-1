@@ -23,11 +23,11 @@
                 
             </div>
             <ul class="logo-entrelados">
-                <li>
-                    <a href="index.html">Home</a>
+                <li class="home">
+                    <a class="home" href="index.html">Home</a>
                 </li>
-                <li>
-                    <a href="contato.html">Contato</a>
+                <li class="contato">
+                    <a class="home" href="contato.html">Contato</a>
                 </li>
             </ul>
         </div>
@@ -38,27 +38,44 @@
     <div class="container">
         <div class="p-30">
             <form class="form-flex">
-                <input class="mb-10" type="text" name="nome" placeholder="NOME: " id="nome" required>
-                <input class="mb-10" type="email" name="email" placeholder="EMAIL: " id="email" required>
-                <input class="mb-10" type="tel" name="telefone" placeholder="TELEFONE (COM DDD)" id="telefone" required>
-                <select class="mb-10" name="select" id="selecionar" required>
-                    <option value="">Selecione uma Opção</option>
+                <label for="nome">Nome:</label>
+                <input class="text" type="text" name="nome" placeholder="Digite seu Nome " id="nome" onkeyup="validarNome()">
+                <div class="mb-10 text-red" id="erroNome"></div>
+
+                <label for="email">Email:</label>
+                <input class="text" type="email" name="email" placeholder="Digite seu Email " id="email"
+                        onkeyup="validarEmail()">
+                <div class="mb-10" id="erroEmail"></div>
+
+                <label for="telefone">Telefone:</label>
+                <input class="" type="tel" name="telefone" placeholder="Digite seu Telefone" id="telefone" onkeyup="validarTelefone()">
+                <div class="mb-10" id="erroTelefone"></div>
+
+                <label for="select">Selecione uma Opção:</label>
+                <select class="" name="opcoes" id="opcoes" onkeyup="validarOpcoes()">
+                    <option value="0">--</option>
                     <option value="1">Dúvidas Gerais</option>
                     <option value="2">Reclamações</option>
+                    <option value="3">nao sei</option>
                 </select>
-                <textarea class="mb-10" name="assunto" placeholder="SUA MENSAGEM" id="assunto" cols="50" rows="10" required></textarea>
+                <div class="mb-10" id="erroOpcoes"></div>
                 
-                <button class="tm-btn">Enviar</button>
+                <label for="digite">Dígite suas Infomações:</label>
+                <textarea class="assunto" name="assunto" placeholder="SUA MENSAGEM" id="assunto" cols="50" rows="10"    onkeyup="validarAssunto()">
+                </textarea>
+                <div class="mb-10" id="erroAssunto"></div>
+                
+                <button class="tm-btn" onclick="validar()">Enviar</button>
             </form>
         </div>
 
-        <div class="p-30">
+        <div class="p-30 endereco">
             <h2>Endereço da Empresa</h2>
 
-            <p>Endereço: R. Pais Leme, 195 - Pinheiros, São Paulo - SP, 05424-150</p>
-            <p>São Paulo</p>
+            <p>Endereço:  W Jefferson Blvd #600, Los Angeles, CA 90094, Estados Unidos</p>
+            <p>Los Angeles</p>
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.6772794589765!2d-118.42835768440013!3d33.975133429236266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b09b15d119ad%3A0x6bda20aec28ab207!2sSanta%20Monica%20Studio!5e0!3m2!1spt-BR!2sbr!4v1668098889216!5m2!1spt-BR!2sbr" width="440" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.6772794589765!2d-118.42835768440013!3d33.975133429236266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b09b15d119ad%3A0x6bda20aec28ab207!2sSanta%20Monica%20Studio!5e0!3m2!1spt-BR!2sbr!4v1668098889216!5m2!1spt-BR!2sbr" class="mapa" width="440" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
         </div>
     </div>
@@ -69,18 +86,20 @@
 
         <div class="container">
             <a href="https://www.facebook.com/santamonicastudio/" target="_blank">
-                <img  class="tm-icon p-10" src="assets/img/facebook.png" alt="facebook">
+                <img  class="tm-icon p-10 facebook" src="assets/img/facebook.png" alt="facebook">
             </a>
             <a href="https://www.instagram.com/santamonicastudio/" target="_blank">
-                <img class="tm-icon p-10" src="assets/img/instagram.png" alt="instagram">
+                <img class="tm-icon p-10 instagram" src="assets/img/instagram.png" alt="instagram">
             </a>   
             <a href="https://www.youtube.com/c/SantaMonicaStudio" target="_blank">
-                <img class="tm-icon p-10" src="assets/img/youtube.png" alt="youtube">
+                <img class="tm-icon p-10 youtube" src="assets/img/youtube.png" alt="youtube">
             </a>      
         
         </div>
-        Todos os direitos reservados &copySony Computer Entertainment.
+        <div class="container p-10"> Todos os direitos reservados &copySony Computer Entertainment. </div>
     </footer>
+
+    <script src="js/script.js"></script>
 
 </body>
 

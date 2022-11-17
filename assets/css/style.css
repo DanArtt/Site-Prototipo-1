@@ -1,3 +1,8 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
 .background-index{
     background-image: linear-gradient(40deg, rgb(0, 0, 0), rgb(0, 17, 255));
     background-repeat:no-repeat;
@@ -29,8 +34,13 @@
 }
 
 .menu li {
-    display: inline;
+    display: block;
+    position: relative;
     padding: 10px;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 15px;
+
 }
 
 .menu a {
@@ -107,4 +117,200 @@
 .contato {
     text-align: center;
     padding-top: 10px;
+}
+
+.image-1 {
+    box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
+}
+
+.image-2 {
+    box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
+}
+
+.image-3 {
+    box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
+}
+
+.image-4 {
+    box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
+}
+
+.image-5 {
+    box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
+}
+
+
+
+/* -------------- Animation mapa ---------------- */
+
+.home:hover {
+    transform: scale(1.1);
+}
+
+.home:hover {
+    transition: transform .3s;
+}
+
+.contato:hover {
+    transform: scale(1.1);
+}
+
+.contato:hover {
+    transition: transform .3s;
+}
+
+.image-1:hover {
+    transform: scale(1.1);
+}
+
+.image-1:hover {
+    transition: transform .3s;
+}
+
+.image-2:hover {
+    transform: scale(1.1);
+}
+
+.image-2:hover {
+    transition: transform .3s;
+}
+
+
+.image-3:hover {
+    transform: scale(1.1);
+}
+
+.image-3:hover {
+    transition: transform .3s;
+}
+
+
+.image-4:hover {
+    transform: scale(1.1);
+}
+
+.image-4:hover {
+    transition: transform .3s;
+}
+
+.image-5:hover {
+    transform: scale(1.1);
+}
+
+.image-5:hover {
+    transition: transform .3s;
+}
+button:hover {
+    transform: scale(1.05);
+}
+
+button:hover {
+    transition: transform .3s;
+}
+
+.facebook:hover {
+    transform: scale(1.1);
+}
+
+.facebook:hover {
+    transition: transform .3s;
+}
+
+.instagram:hover {
+    transform: scale(1.1);
+}
+
+.instagram:hover {
+    transition: transform .3s;
+}
+
+.youtube:hover {
+    transform: scale(1.1);
+}
+
+.youtube:hover {
+    transition: transform .3s;
+}
+
+.mapa:hover{
+    transition: transform .3s;
+}
+
+.mapa:hover {
+    transform: scale(1.05);
+}
+
+.contato, .empresa {
+    animation: fromTop .7s backwards;
+}
+
+.form-flex {
+    animation: fromLeft .7s backwards;
+    
+}
+
+.endereco {
+    animation: fromRight .7s backwards;
+}
+
+.img-tm {
+    animation: fromRight .7s backwards;
+}
+
+header {
+    animation: fromTop .7s backwards;
+}
+
+footer {
+    animation: fromBottom .7s backwards;
+}
+
+/* -------------------------- KeyFrams ------------------------ */
+
+@keyframes fromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fromRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+}
 }
